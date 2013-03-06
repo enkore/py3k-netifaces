@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import setuptools
 import os
 import sys
@@ -402,7 +404,7 @@ class my_build_ext(build_ext):
 if not getattr(sys, 'getwindowsversion', None):
     setuptools.command.build_ext.build_ext = my_build_ext
 
-setup (name='netifaces',
+setup (name='netifaces-py3',
        version=__version__,
        description="Portable network interface information.",
        license="MIT License",
